@@ -20,6 +20,13 @@ var servers = [
 		defaultWordCount: 1,
 		defaultWordLength: [[5], [5, 4], [3, 2, 4]],
 	},
+	{
+		name: "Skribbl.io",
+		game: "Game",
+		wordListFile: "./wordlist-skribblio.txt",
+		defaultWordCount: 1,
+		defaultWordLength: [[4], [4, 4], [3, 3, 3]]
+	}
 	// You can add more servers if you want, they will appear in the list automatically
 ]
 
@@ -30,7 +37,7 @@ const HINT_SPACE_WIDTH = "40px";
 const MAX_WORDS_SHOWN = 20;
 const SPLIT_WORDS_COLUMN_AT = 10;
 
-var selectedServer = servers[DEFAULT_SERVER_INDEX];
+let selectedServer = servers[DEFAULT_SERVER_INDEX];
 var wordCount;
 var wordLength;
 

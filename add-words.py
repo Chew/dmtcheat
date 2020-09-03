@@ -1,7 +1,7 @@
 import re
 
 server = None
-while server not in ["mineplex", "hive", "hypixel"]:
+while server not in ["mineplex", "hive", "hypixel", "skribblio"]:
     server = input("Server: ").lower()
 
 newWords = input("New words list (comma separated): ")
